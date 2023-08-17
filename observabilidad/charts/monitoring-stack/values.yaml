@@ -6,16 +6,14 @@ grafana:
     prometheus:
       serviceMonitor:
         enabled: true
-
-grafana:
-  enabled: true
-  dashboardlabelSelectors:
-    - matchLabels:
-      app: grafana
-  persistence:
+  grafana:
     enabled: true
-    size: 5Gi
-
+    dashboardLabelSelectors:
+      - matchLabels:
+        app: grafana
+    persistence:
+      enabled: true
+      size: 5Gi
 prometheus:
   namespaceOverride: monitoring
   prometheus:
@@ -23,9 +21,9 @@ prometheus:
     persistence:
       enabled: true
       size: 5Gi
-alertmanager:
-  persistence:
-    enabled: true
-    size: 5Gi
+  alertmanager:
+    persistence:
+      enabled: true
+      size: 5Gi
 
  
