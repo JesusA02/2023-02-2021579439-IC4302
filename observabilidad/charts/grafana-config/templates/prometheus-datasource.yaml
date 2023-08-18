@@ -7,12 +7,12 @@ spec:
   name: middleware.yaml
   datasources:
     - name: Prometheus
-    type: prometheus
-    access: proxy
-    url: http://monitoring-stack-prometheu-prometheus:9090
-    isDefault: true
-    version: 1
-    editable: true
-    jsonData:
-    tlsSkipVerify: true
-    timeInterval: "5s"
+      type: prometheus
+      access: proxy
+      url: http://monitoring-stack-prometheu-prometheus:9090
+      isDefault: true
+      version: 1
+      editable: true
+      jsonData:
+        tlsSkipVerify: true
+        timeInterval: "5s"

@@ -13,6 +13,6 @@ spec:
 {{ $.Files.Get (printf "dashboards/%s" $value.file) | indent 4 }}
   datasources:
     - inputName: "DS_PROMETHEUS"
-    datasourceName: "Prometheus"
+      datasourceName: "Prometheus"
 {{- end }}
 {{- end }}
