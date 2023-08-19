@@ -1,5 +1,36 @@
 mariadb:
+  enabled: false
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+postgresql-ha:
+  enabled: false
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+mongodb:
+  enabled: false
+  metrics:
+    enabled: true
+    serviceMonitor: 
+      enabled: true
+      namespace: "monitoring"
+mariadb-galera:
+  enabled: false
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+elasticsearch:
   enabled: true
+  master:
+    persistence:
+      size: 1Gi
   metrics:
     enabled: true
     serviceMonitor:
